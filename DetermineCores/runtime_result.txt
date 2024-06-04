@@ -1,0 +1,23 @@
+Run 0 with 1: 54835734292 nanosec
+Run 1 with 1: 54854225459 nanosec
+Run 2 with 1: 54867787667 nanosec
+Run 3 with 1: 55074976916 nanosec
+Run 4 with 1: 54909844625 nanosec
+Run 0 with 2: 111483629917 nanosec
+Run 1 with 2: 111537627917 nanosec
+Traceback (most recent call last):
+  File "/Users/longtran/Personal/Computer Science/CS574/DetermineCores/main.py", line 40, in <module>
+    run_threads(threadNum)
+  File "/Users/longtran/Personal/Computer Science/CS574/DetermineCores/main.py", line 32, in run_threads
+    thread.join()
+  File "/Users/longtran/miniconda3/lib/python3.11/threading.py", line 1119, in join
+    self._wait_for_tstate_lock()
+  File "/Users/longtran/miniconda3/lib/python3.11/threading.py", line 1139, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/Users/longtran/miniconda3/lib/python3.11/threading.py'>
+Traceback (most recent call last):
+  File "/Users/longtran/miniconda3/lib/python3.11/threading.py", line 1590, in _shutdown
+    lock.acquire()
+KeyboardInterrupt: 
